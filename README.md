@@ -25,6 +25,36 @@ Dashboard de desempenho comercial desenvolvido com base na análise e higieniza�
 
 ---
 
+## 🛠️ Ferramentas, Tecnologias e Materiais Utilizados
+
+Para o desenvolvimento completo deste projeto de Business Intelligence e visualização de dados, foram empregues os seguintes materiais e ferramentas ao longo do pipeline:
+
+* **Microsoft Excel**
+  * **O que é:** Ferramenta de folha de cálculo.
+  * **Por que foi usado:** Utilizado para a estrutura primária, armazenamento e validação inicial da base de dados de vendas de veículos (`porsche_vendas_database_sanitizada.xlsx`).
+
+* **Claude AI**
+  * **O que é:** Assistente de Inteligência Artificial avançado.
+  * **Por que foi usado:** Empregue na fase inicial para realizar o tratamento, saneamento e correção programática da base de dados (resolução de datas inválidas e padronização dos registos).
+
+* **Gemini AI**
+  * **O que é:** Modelo multimodal de Inteligência Artificial generativa.
+  * **Por que foi usado:** Utilizado para gerar a arquitetura lógica, o design visual de alta performance (*Dark Theme* inspirado no site oficial da Porsche Brasil) e o código iterativo da dashboard em HTML, CSS e JavaScript.
+
+* **Notas (Bloco de Notas / Editores de Texto)**
+  * **O que é:** Utilitários de texto simples.
+  * **Por que foi usado:** Utilizados como repositórios de documentação provisória para armazenar, estruturar e refinar os prompts enviados às IA (`prompt_gemini_dashboard_porsche.txt`) e os scripts de código fonte bruto (`index_code.txt`).
+
+* **HTML5, Tailwind CSS & Chart.js**
+  * **O que é:** Stack de desenvolvimento web frontend e gráficos dinâmicos.
+  * **Por que foi usado:** Responsáveis por renderizar a interface de utilizador (UI/UX) minimalista, desportiva e responsiva, bem como os gráficos interativos de receita, vendas e logística.
+
+* **GitHub & GitHub Pages**
+  * **O que é:** Plataforma de controlo de versões e alojamento web estático.
+  * **Por que foi usado:** Utilizados para o armazenamento público do código-fonte e publicação imediata do projeto em produção (`Live Preview`), tornando a dashboard acessível para portfólio profissional.
+
+---
+
 ## 🧹 Tratamento e Higienização da Base de Dados
 
 Antes de alimentar a dashboard com a IA, a base de dados passou por etapas críticas de saneamento (realizadas via Python/Pandas):
