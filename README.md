@@ -43,7 +43,7 @@ Para garantir a transparência do desenvolvimento assistido por IA, os artefatos
 
 ## 🚀 Acesso à Dashboard Publicada
 
-- **URL do GitHub Pages:** `https://jeandaedouard1009-eng.github.io/dashboard-vendas-porsche/`
+- **URL do GitHub Pages:** [Clique aqui para aceder a Dashboard](https://jeandaedouard1009-eng.github.io/dashboard-vendas-porsche/)
 
 ---
 
