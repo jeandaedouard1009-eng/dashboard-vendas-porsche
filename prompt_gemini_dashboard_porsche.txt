@@ -1,0 +1,19 @@
+Utilizando o recurso de canvas, renderize uma dashboard em html ao lado
+
+# Filtros
+-> Modelo do Veiculo
+-> Localização Geografica
+-> Estado da Entrega
+-> Método de pagamento
+
+# Perguntas de negocios e kpis
+-> Desempenho de Receita por Modelo
+-> Eficiência da Equipa de Vendas
+-> Distribuição Geográfica de Mercado
+-> Acompanhamento operacional e Logistico
+-> Preferencias Financiarias e Tipo de Veiculo
+
+Sobre o ui/ux se baseie no site oficial da porsche brasil:
+https://www.porsche.com/brazil/pt/
+
+Tenha um ar premium, esportivo, elegante, minimalisto e technologico.
