@@ -1,56 +1,44 @@
-# 🏎️ Dashboard Executivo de Vendas Porsche Brasil
+# 🏎️ Porsche Brasil | Executive Intelligence Dashboard
 
-> **Projeto desenvolvido por Jean Dael Edouard para a comunidade e desafios da DIO (Digital Innovation One).**
+Dashboard de desempenho comercial desenvolvido com base na análise e higienização de dados de vendas de veículos Porsche. O projeto foi concebido com foco em um design **Dark Theme Premium**, alinhado à identidade visual oficial da Porsche.
 
-Uma solução analítica de alta performance e interface luxuosa voltada para a gestão executiva de vendas da **Porsche Brasil**. Este dashboard interativo foi construído para transformar dados operacionais em insights estratégicos em tempo real, mantendo a identidade visual elegante e refinada da marca oficial da Porsche.
+## 📊 Perguntas de Negócio Escolhidas e Justificativa
 
----
-
-## 🔗 Link de Acesso ao Dashboard
-
-Clique no link abaixo para visualizar a aplicação interativa publicada via **GitHub Pages**:
-
-👉 **[Acessar Dashboard Porsche Brasil](https://jeandaedouard1009-eng.github.io/dashboard-vendas-porsche/)**
-
----
-
-## 📌 Funcionalidades Principais
-
-* **Interface Responsiva & Tema Porsche:** UI/UX inspirada no portal oficial da Porsche Brasil, combinando os tons *Carmine Red (`#D5001C`)*, *Dark Carbon* e componentes interativos avançados.
-* **Filtros Dinâmicos em Tempo Real:**
-  * 🚘 Modelo do Veículo (Porsche Model)
-  * 📅 Ano do Modelo (Model Year)
-  * 🏙️ Cidade de Destino (City)
-  * 💳 Método de Pagamento (Pay Method)
-* **Visualização Analítica Interativa:** Gráficos desenvolvidos em **Chart.js** responsivos com *tooltips* detalhados em BRL (R$).
+1. **Desempenho de Receita por Modelo:**
+   - *Por quê:* Identificar quais linhas de veículos (*911, Cayenne, Taycan, etc.*) geram maior faturamento bruto e sustentam a margem de receita da marca.
+2. **Eficiência da Equipe de Vendas:**
+   - *Por quê:* Avaliar o volume financeiro fechado por cada consultor/vendedor para otimizar comissões e metas comerciais.
+3. **Distribuição Geográfica de Mercado:**
+   - *Por quê:* Mapear quais estados e regiões concentram a maior concentração de clientes e poder de compra.
+4. **Acompanhamento Operacional e Logístico:**
+   - *Por quê:* Monitorar o status das entregues (*Delivered, In Transit, Pending*) para garantir eficiência e reduzir gargalos logísticos.
+5. **Preferências Financeiras por Modalidade de Pagamento:**
+   - *Por quê:* Entender o comportamento de compra dos clientes em relação aos métodos de pagamento utilizados (*Wire Transfer, Financing, Cash, etc.*).
 
 ---
 
-## 📊 Respostas às Perguntas de Negócio (KPIs)
+## 🛠️ Evolução do Prompt e Construção
 
-O dashboard responde de forma dinâmica às 5 principais perguntas do conselho executivo:
-
-1. **Modelos mais vendidos por cidade:** Identificação dos modelos com maior volume de entregas e aceitação regional.
-2. **Ano de modelo mais vendido no período:** Análise de distribuição por ano de fabricação/modelo dos carros comercializados.
-3. **Insights de popularidade urbana:** Análise dos modelos *bestsellers* e tendências de demanda específica por cidade.
-4. **Faturamento total por modelo de carro:** Ranking de receita gerada por cada linha de produto (ex: *911*, *Taycan*, *Cayenne*, *Macan*, *718*).
-5. **Análise Combinada de Quilometragem e Métodos de Pagamento:** Média de quilometragem percorrida (veículos novos vs. seminovos) e distribuição das modalidades financeiras preferidas pelos clientes.
+- **Prompt Inicial:** Focado apenas em listar os filtros básicos e KPIs textuais.
+- **Evolução Iterativa:** Nas versões intermediárias, integramos gráficos interativos com **Chart.js** e refinamos o layout com **Tailwind CSS** utilizando um estilo *glassmorphism*.
+- **Versão Final:** Incorporação rigorosa do UI/UX inspirado no site oficial da Porsche Brasil (`#0A0A0A` fundo preto metálico, detalhes em vermelho Porsche `#D5001C`, fontes elegantes e cartões flutuantes).
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🧹 Tratamento e Higienização da Base de Dados
 
-* **Frontend / UI:** HTML5, CSS3 (Modern Flexbox/Grid, Glassmorphism, CSS Variables), JavaScript (ES6+ Vanilla).
-* **Data Visualization:** [Chart.js](https://www.chartjs.org/) (Bar Charts, Doughnut Charts, Dual-Axis Composite Charts).
-* **Base de Dados:** Excel Sanitizado (`porsche_database_sanitizada.xlsx`) integrado diretamente ao client-side para resposta instantânea.
-* **Hospedagem:** GitHub Pages.
+Antes de alimentar a dashboard com a IA, a base de dados passou por etapas críticas de saneamento (realizadas via Python/Pandas):
+- **Correção de Datas Inválidas:** Registros com marcações `INVALID` na coluna de data de venda (`SaleDateSanitized`) foram limpos e interpolados chronologicamente com base no ID da transação. E outros campos com valores não idênticos foram corrigidos para evitar erros e deixar todos os informações uniformes.
+- **Padronização de Nomes:** Normalização de strings nas colunas de nomes de vendedores (`salesperson`), cidades, estados e modelos para evitar duplicações por divergência de maiúsculas/minúsculas. E deixar os informações mais clara para facilitar a leitura das informacoes.
 
 ---
 
-## 📂 Estrutura do Repositório
+## 🚀 Acesso à Dashboard Publicada
 
-```text
-dashboard-vendas-porsche/
-│
-├── index.html                       # Aplicação principal (Dashboard interativo em HTML/CSS/JS)
-└── porsche_database_sanitizada.xlsx  # Base de dados original utilizada
+- **URL do GitHub Pages:** `https://<seu-usuario>.github.io/porsche-sales-dashboard/` *(Substitua <seu-usuario> pelo seu nickname do GitHub)*
+
+---
+
+## 📸 Evidências Visuais (Exemplo de Filtro Aplicado)
+
+> *Dica: Insira aqui um print de tela da sua dashboard mostrando o filtro de modelo "911 Turbo S" aplicado e os KPIs atualizados em tempo real.*
