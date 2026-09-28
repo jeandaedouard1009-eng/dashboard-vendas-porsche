@@ -36,8 +36,8 @@ Antes de alimentar a dashboard com a IA, a base de dados passou por etapas crít
 ## 🤖 Prompt e Código de Implementação
 
 Para garantir a transparência do desenvolvimento assistido por IA, os artefatos de código e comandos estão disponíveis no repositório:
-- **Prompt Utilizado (`prompt_gemini_dashboard_porsche.txt`):** O prompt estruturado enviado à inteligência artificial para conceber o layout minimalista, desportivo e alinhado ao site oficial da Porsche Brasil.
-- **Código Fonte (`index_code.txt`):** O código textual completo em HTML, Tailwind CSS e Chart.js utilizado para renderizar os gráficos e tabelas interativas.
+- **Prompt Utilizado ![dashboard-vendas-porsche](prompt_gemini_dashboard_porsche.txt) :** O prompt estruturado enviado à inteligência artificial para conceber o layout minimalista, desportivo e alinhado ao site oficial da Porsche Brasil.
+- **Código Fonte ![dashboard-vendas-porsche](index_code.txt) :** O código textual completo em HTML, Tailwind CSS e Chart.js utilizado para renderizar os gráficos e tabelas interativas.
 
 ---
 
@@ -47,8 +47,10 @@ Para garantir a transparência do desenvolvimento assistido por IA, os artefatos
 
 ---
 
-> ## 📸 Evidências Visuais (Dashboard Preview)
+> ## 📸 Evidências Visuais (Dashboard Preview) e Planilha Excel
 
 Abaixo está uma pré-visualização da dashboard executiva com o tema Porsche aplicados:
 
 ![Dashboard Porsche Preview](dashboard_porsche.jpeg)
+
+Baixar a planilha : ![dashboard-vendas-porsche](porsche_vendas_database_sanitizada.xlsx)
